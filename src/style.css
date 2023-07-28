@@ -1,4 +1,7 @@
 .weather {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid;
   border-radius: 16px;
   box-shadow: 0 30px 50px rgba(59, 117, 69, 0.08);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
