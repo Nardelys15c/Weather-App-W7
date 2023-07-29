@@ -3,58 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <div class="weather">
-        <forms>
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Enter a city.."
-                class="'form-control search-inputs"
-              />
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <forms>
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter a city.."
+                  class="'form-control search-inputs"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  class="btn btn-primary w-100"
+                  value="search"
+                />
+              </div>
             </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                class="btn btn-primary w-100"
-                value="search"
-              />
-            </div>
-          </div>
-        </forms>
-        <div class="weatherInfo">
-          <div class="row">
-            <div class="col-6">
-              <h1>Sebastian</h1>
-              <ul>
-                <li><span>Friday 16:57 PM</span>, Thunderstorms</li>
-                <li>
-                  Humidity <strong>94% </strong>, Wind<strong> 8 mph</strong>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-8">
-              <div class="temperature-container d-flex justify-content-end">
-                <div>
-                  <span class="thunderStorms">⛈</span>
-                  <span class="temperature">76</span>
-                  <span class="units">°F</span>
+          </forms>
+          <div class="weatherInfo">
+            <div class="row">
+              <div class="col-6">
+                <h1>Sebastian</h1>
+                <ul>
+                  <li><span>Friday 16:57 PM</span>, Thunderstorms</li>
+                  <li>
+                    Humidity <strong>94% </strong>, Wind<strong> 8 mph</strong>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="temperature-container d-flex justify-content-end">
+                  <div class="currentTemp">
+                    <span class="thunderStorms">⛈</span>
+                    <span class="temperature">76</span>
+                    <span class="units">°F</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <small>
+          <a
+            href="https://github.com/Nardelys15c/Weather-App-W7.git"
+            target="_blank"
+            >Open-source code</a
+          >
+          By Nardelys Caraballo
+        </small>
       </div>
     </div>
     <script src="src/app.js"></script>
