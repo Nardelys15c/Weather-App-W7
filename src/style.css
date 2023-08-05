@@ -48,3 +48,10 @@ li {
   position: relative;
   top: -30px;
 }
+.currentTemp .active {
+  color: rgb(31, 29, 29);
+  cursor: default;
+}
+.currentTemp .active:hover {
+  text-decoration: none;
+}
